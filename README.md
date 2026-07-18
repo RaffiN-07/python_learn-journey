@@ -17,22 +17,24 @@ Semua materi disusun secara berurutan berdasarkan alur pembelajaran di Kelas Ter
 ## Cara Menjalankan Kode
 
 1. Pastikan Python sudah terinstal di sistem Anda. Cek menggunakan perintah:
-   '''bash
+   ```bash
    python --version
-   ''' 
+   ``` 
 
 2. Clone repositori ini ke komputer lokal Anda:
+   ```bash
    git clone https://github.com/RaffiN-07/python_learn-journey.git
-
+   ```
+   
 3. Masuk ke dalam direktori/folder repositori:
-   '''bash
+   ```bash
    cd python_learn-journey
-   '''
+   ```
 
 4. Jalankan salah satu file materi, misalnya:
-   '''bash
+   ```bash
    python main.py
-   '''
+   ```
 
 ## Sumber Belajar
 

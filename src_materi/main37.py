@@ -19,13 +19,13 @@ print(data_dict["key_1"])
 print("\n")
 
 data_nilai_otong ={
-    "matematika" : 78,
-    "b_indo" : 89,
-    "B_ing" : 97,
-    "ipa" : 92,
-    "ips" : 93,
-    "tik" : 100,
-    "pjok" : 70
+    "Matematika" : 78,
+    "Bahasa Indonesia" : 89,
+    "Bahasa Inggris" : 97,
+    "IPA" : 92,
+    "IPS" : 93,
+    "TIK" : 100,
+    "PJOK" : 70
 }
 
 list_nilai = []
@@ -41,17 +41,23 @@ print(f"KKM = 80 \n Rata-rata Nilai Otong : {int(rata_rata_nilai)}")
 print("\n")
 
 data_siswa_otong = {
-    "nama" : "Otong",
-    "tanggal_lahir": "7 agustus",
-    "kelas": 9,
-    "nilai_kelas_9" : data_nilai_otong,
-    "rata_rata_nilai" : int(rata_rata_nilai),
+    "Nama" : "Otong",
+    "Tanggal Lahir": "7 agustus",
+    "Kelas": 9,
+    "Nilai Kelas 9" : data_nilai_otong,
+    "Rata-rata Nilai" : int(rata_rata_nilai),
 }
 
 if rata_rata_nilai >= 80:
-    print(f"=== SELAMAT ATAS NAMA SISWA {data_siswa_otong['nama']} LULUS! ===")
+    print(f"=== SELAMAT ATAS NAMA SISWA {data_siswa_otong['Nama']} LULUS! ===")
     for i in data_siswa_otong:
-        print(f"{i} : {data_siswa_otong[i]}")
+        if i == "Nilai Kelas 9":
+            print(f"{i} : ")
+            for nilai_otong in data_nilai_otong:
+                print(f"{nilai_otong} = {data_nilai_otong[nilai_otong]}")
+        else:
+            print(f"{i} : {data_siswa_otong[i]}")
+
     print(f"{"="*35}")
 else:
-    print(f"===MOHON MAAF ATAS NAMA {data_siswa_otong['nama']} TIDAK LULUS!")
+    print(f"===MOHON MAAF ATAS NAMA {data_siswa_otong['Nama']} TIDAK LULUS!")

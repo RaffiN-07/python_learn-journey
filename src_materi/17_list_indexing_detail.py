@@ -61,3 +61,6 @@ if rata_rata_nilai >= 80:
     print(f"{"="*35}")
 else:
     print(f"===MOHON MAAF ATAS NAMA {data_siswa_otong['Nama']} TIDAK LULUS!")
+
+
+
